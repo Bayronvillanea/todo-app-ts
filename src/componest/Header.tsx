@@ -1,6 +1,9 @@
 import { CreateTodo } from "./CreateTodo"
-
-export const Header: React.FC = ({onAddTodo}) => {
+import { TodoTitle } from "../types";
+interface HeaderProps {
+    onAddTodo: (todo: TodoTitle) => void;
+  }
+export const Header :React.FC<HeaderProps> = ({ onAddTodo }) => {
     return (
         <header className="header">
             <h1>todo

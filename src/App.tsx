@@ -23,7 +23,6 @@ const mockTodos  =[
 ]
 
 
-
 function App():JSX.Element {
   const [todos, setTodos] = useState(mockTodos)
   const [filterSelected, setfilterSelected] = useState<FilterValue>(TODO_FILTERS.ALL)
